@@ -14,11 +14,6 @@
 # keywords = ['chocolate']
 # language = ['pt']
 
-# consumer_key = 'j3nP1EkKSDQrbDh1csIaZjfmy'
-# consumer_secret = 'BpqdIBGVS89WCnIZLHrzq46leYc2tCX0wz4vXOiVmCHju6JRXq'
-# access_token = '181700274-Xd8OZTf2EwKsEZrMG4SvP02Y24AtPKpPFQrlUGOy'
-# access_secret = 'P5g1VMCtJcghnDFVWym27NU0TJ0ucs5vQOmqqcRKcpqOB'
-
 # class Listener(StreamListener):
 
 #     def on_data(self, data):
@@ -61,10 +56,10 @@ client = MongoClient('localhost', 27017)
 db = client.TwitterStream
 collection = db.tweetests
 
-consumer_key = 'j3nP1EkKSDQrbDh1csIaZjfmy'
-consumer_secret = 'BpqdIBGVS89WCnIZLHrzq46leYc2tCX0wz4vXOiVmCHju6JRXq'
-access_token = '181700274-Xd8OZTf2EwKsEZrMG4SvP02Y24AtPKpPFQrlUGOy'
-access_secret = 'P5g1VMCtJcghnDFVWym27NU0TJ0ucs5vQOmqqcRKcpqOB'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_secret = ''
 
 auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True,
